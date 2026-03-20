@@ -1,5 +1,3 @@
-
-
 Pers = 'Наруто'
 
 def sravnenyie(a,b):
@@ -32,6 +30,7 @@ def logica(Pers,GuessPers,Pvilage,Pjutsu,PkekeGenkay,Pstats,Patributes,Parka):
             atributes = atributes.split()
             arka = line.split(sep=';')[6]
             arka = arka.split()
+            f.close()
             print("Персонаж:",GuessPers)
             print('_____')
             print('Деревня:')
@@ -55,7 +54,7 @@ def logica(Pers,GuessPers,Pvilage,Pjutsu,PkekeGenkay,Pstats,Patributes,Parka):
                 logicaP(Pers)
             else:
                 print('Поздравляем!')
-    f.close()
+    
 def logicaP(Pers):
     f = open('NarutoList.txt', 'r', encoding='utf-8')
     for line in f:
